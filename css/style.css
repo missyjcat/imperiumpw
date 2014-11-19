@@ -1,0 +1,567 @@
+/*
+ * BASE STYLES
+ */
+
+	@import url(http://fonts.googleapis.com/css?family=Cinzel:400,700);
+
+	html,body,h1,h2,h3,h4,h5,h6,p,li,a {
+	    font-family: "minion-pro", "Times New Roman";
+	    color: #333;
+	}
+
+	p {
+		font-size: 17px;
+		line-height: 26px;
+		padding-bottom: 20px;
+	}
+
+	a {
+		text-decoration: none;
+		color: #520e12;
+	}
+
+	.js-is-hidden {
+		display: none !important;
+	}
+
+	.js-is-shown {
+		display: block !important;
+	}
+
+/*
+ * HEADER REGION
+ */
+
+/* This is the non-front page styles, which are followed by styles for the front page */
+
+	.header-region {
+		height: 65px;
+		background-color: #520e12;
+		width: 100%;
+	}
+
+	.page-logo {
+		float:left;
+		margin-top: 13px;
+	}
+
+/* MENUS */
+
+	.nice-menu-main-menu {
+		float: right;
+		list-style-type: none;
+	}
+
+	.nice-menu-main-menu li {
+		display: inline-block;
+		padding: 25px 19px 0 19px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.nice-menu-main-menu li ul li {
+		padding: 10px;
+		background-color: #38090c;
+	}
+
+	.nice-menu-main-menu li ul {
+		width: 100%;
+		margin-left: -18px;
+		margin-top: 27px;
+	}
+
+	.nice-menu-main-menu li a, .nice-menu-main-menu li ul li a {
+		color: #fff;
+		text-decoration: none;
+		font-family: Cinzel;
+		font-weight: 400;
+		font-size: 13px;
+	}
+
+
+/* PAGE BANNERS */
+
+	.pagebanner__title {
+		font-family: 'Cinzel', 'Times New Roman', 'serif';
+		font-weight: 400;
+		text-align: center;
+		position: relative;
+		top: -220px;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 3em;
+	}
+
+	.pagebanner__image {
+		max-height: 385px;
+		min-height: 385px;
+		width: 100%;
+		margin: 0 auto;
+		background-color: #460a0e; /* For when there is no uploaded header image */
+	}
+
+	.pagebanner__image img {
+		max-width: 100%;
+		height: 385px;
+	}
+
+/*
+ * FRONT PAGE Styles
+ */
+
+ /* HEADER STYLES */
+
+	 .front .header-region {
+	 	height: auto;
+	 	text-align: center;
+	 	border-top: solid #520e12 10px;
+	 }
+
+	 .front .page-logo {
+	 	float: none;
+	 	padding: 20px 0 15px 0;
+	 	margin: 0;
+	 	background: url('../img/header-gradient-red.png') no-repeat 50% 10%;
+	 }
+
+	 .front .nice-menu-main-menu {
+	 	float: none;
+	 	display: block;
+	 	clear: both;
+	 }
+
+	 .front .nice-menu-main-menu>li {
+	 	padding: 15px 20px 15px 20px;
+	 }
+
+	 .front .nice-menu-main-menu li ul {
+	 	margin-top: 15px;
+	 }
+
+	 .background--front {
+	 	position: absolute;
+	 	top: 184px;
+	 	z-index: -100;
+	 	width: 100%;
+	    height: 889px;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	 }
+
+	 /* FRONT PAGE CONTENT */
+
+	 .alpha--front {
+	 	margin-top: 300px;
+	 	text-align: center;
+	 	background: transparent url('../img/blue-80-pixel.png');
+	 	padding: 15px 0;
+		color: #fff;
+		font-size: 30px;
+		line-height: 40px;
+		width: 100%;
+		position: absolute;
+		top: 392px;
+	 }
+
+	 .body--front {
+	 	color: #fff;
+		padding: 35px 0;
+		font-size: 19px;
+		text-align: center;
+		background-color: #272832;
+		position: absolute;
+		width: 100%;
+		top: 800px;
+	 }
+
+	 @media all and (max-width: 768px) {
+	 	
+	 	.alpha--front {
+	 		top: 300px;
+	 		height: 150px;
+	 		padding: 15px 0;
+	 	}
+
+	 	.body--front {
+	 		top: 750px;
+	 		font-size: 16px;
+	 		height: 250px;
+	 	}
+
+	 }
+
+/*
+ * CONTENT STYLES
+ */
+
+	.content h1 {
+		font-size: 2.5em;
+		padding-bottom: 1em;
+	}
+
+	.content h2 {
+		font-size: 2.3em;
+		padding-bottom: .9em;
+		font-style: italic;
+		color: #555;
+	}
+
+	.field-name-body {
+		padding-bottom: 40px;
+	}
+
+/*
+ * LAYOUT
+ */
+
+ 	.text-align-center {
+ 		text-align: center;
+ 	}
+
+
+	@media all and (min-width: 960px) {
+
+		.fixed-inner {
+			width: 960px;
+			margin: 0 auto;
+		}
+	}
+
+
+	@media all and (max-width: 959px) {
+
+		.fixed-inner {
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+
+/* PRACTICE */
+
+	.menu--practice {
+		width: 25%;
+		float: left;
+		background-color: #ebebeb;
+		padding: 20px;
+		margin-right: 30px;
+		-webkit-box-shadow: 2px 2px 5px 0 rgba(50, 50, 50, 0.75);
+		-moz-box-shadow:    2px 2px 5px 0 rgba(50, 50, 50, 0.75);
+		box-shadow:         2px 2px 5px 0 rgba(50, 50, 50, 0.75);
+	}
+
+	.menu--practice .title {
+		font-family: 'Cinzel';
+		text-align: center;
+		color: #272832;
+		font-style: normal;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding: 20px 0 30px 0;
+	}
+
+	.menu--practice ul li {
+		text-align: center;
+		border-top: 1px solid #dcdbdb;
+		padding: 30px 0;
+		font-size: 23px;
+	}
+
+	.pathone-practice .field-name-body {
+		float: left;
+		width: 62%;
+	}
+
+	.tooltip {
+		width: 240px;
+		background-color: #333;
+		position: absolute;
+	}
+
+	.tooltip__arrow {
+		position: absolute;
+		width: 18px;
+		height: 23px;
+		background-image: url('../img/leftarrow.png');
+		left: -17px;
+		top: 17px;
+	}
+
+	.tooltip__title {
+		color: #fff;
+		font-family: 'minion-pro','Times New Roman';
+		font-size: 16px;
+		padding: 15px;
+		line-height: 21px;
+		font-style: italic;
+	}
+
+	.tooltip__readmore {
+		font-size: 10px;
+		text-transform: uppercase;
+		padding: 0 15px 15px 15px;
+		color: #fff;
+		font-family: Arial;
+		line-height: 14px;
+	}
+
+/* ATTORNEY PROFILE */
+
+	.backlink {
+		padding-bottom: 20px;
+	}
+
+		.backlink a {
+			font-size: 17px;
+			font-family: Cinzel, 'Times New Roman', serif;
+			text-transform: uppercase;
+			clear: both;
+		}
+
+		.backlink__arrow {
+			font-size: 46px;
+			position: relative;
+			top: 12px;	
+		}
+
+	.attorney__leftside {
+		float: left;
+		width: 32%;
+		text-align: center;
+		padding-right: 25px;
+	}
+
+		.attorney__photo {
+			padding-bottom: 15px;
+		}
+
+		.attorney__photo img {
+			width: 100%;
+			height: auto;
+		}
+
+		.attorney__fullname {
+			font-family: Cinzel,'Times New Roman', serif;
+			text-transform: uppercase;
+			font-size: 22px;
+			line-height: 33px;
+		}
+
+		.attorney__title {
+			font-family: Cinzel,'Times New Roman', serif;
+			text-transform: uppercase;
+			font-size: 18px;
+			font-weight: 700;
+		}
+
+		.attorney__phone, .attorney__email {
+			font-size: 18px;
+			font-style: italic;
+			line-height: 24px;
+		}
+
+	.attorney__rightside {
+		float: left;
+		width: 64%;
+	}
+
+		.attorney__rightside .field {
+			padding-bottom: 30px;
+		}
+
+		.attorney__areasofpractice, .attorney__baradmissions, .attorney__education, .attorney__publishedworks {
+			padding-left: 30px;
+		}
+
+		.attorney__rightside label {
+			margin-left: -30px;
+			padding-bottom: 10px;
+		}
+
+/* ATTORNEYS VIEWS PAGE */
+
+	.attorneys--row {
+		float: left;
+		width: 295px;
+		padding: 0 20px 40px 0;
+	}
+
+/* CONTACT PAGE */
+
+	.path-contact .sidebar-first {
+		float: left;
+		width: 400px;
+		padding-bottom: 40px;
+	}
+
+	.path-contact .field-name-body {
+		padding: 0;
+	}
+
+	.contact__map {
+		float: left;
+		width: 400px;
+		margin-right: 20px;
+	}
+
+	.contact__title {
+		text-transform: uppercase;
+		font-size: 1.7em;
+	}
+
+	.contact__address {
+		text-transform: uppercase;
+		padding-top: 17px;
+	}
+
+	.path-contact input[type="text"], .path-contact input[type="email"] {
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #ededed;
+	}
+
+	.path-contact select {
+		padding: 5px;
+		border: 1px solid #ededed;
+	}
+
+	.path-contact .form-item > label {
+		padding: 10px 0;
+	}
+
+	.path-contact .form-checkboxes div {
+		display: block;
+		padding: 10px 0;
+	}
+
+	.path-contact input[type="text"].year {
+		width: 100px;
+	}
+
+	.path-contact input[type="submit"] {
+		background-color: #520e12;
+		border: 0;
+		padding: 12px 30px;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 1.2em;
+	}
+
+	::-webkit-input-placeholder {
+   		text-transform: uppercase;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   text-transform: uppercase;  
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   text-transform: uppercase;  
+	}
+
+	:-ms-input-placeholder {  
+	   text-transform: uppercase;  
+	}
+
+	.path-contact iframe {
+		border: 1px solid #333 !important
+	}
+
+/* NEWS PAGE */
+
+	.block-views-news-block-1 {
+		padding-bottom: 40px;
+	}
+
+	.views-field-field-image {
+		padding: 30px 30px;
+		vertical-align: middle;
+	}
+
+	.newsindex__title {
+		vertical-align: top;
+		padding: 30px 0;
+	}
+
+	.newsindex__readmorelink {
+		font-family: Arial;
+		font-size: 12px;
+	}
+
+/* ARTICLE PAGE */
+
+	.addthis_sharing_toolbox {
+		padding: 20px 0;
+	}
+
+/* Styling the edit tabs */
+	nav.tabs {
+		position: fixed;
+		bottom: 0;
+		z-index: 100000000000;
+	}
+
+	nav.tabs ul.tabs {
+		border-bottom: 0;
+		padding-bottom: 15px;
+	}
+
+	nav.tabs ul.tabs li a {
+		padding: 5px;
+		border-bottom: 1px solid #bbb;
+	}
+
+	nav.tabs {
+		clear: both;
+	}
+
+/* FOOTER STYLES */
+
+	.front footer {
+		height: 150px;
+		width: 100%;
+		background-color: #303244;
+		top: 984px;
+		position: absolute;
+		font-size: 15px;
+		color: #b7b9ca;
+		padding-top: 25px;
+	}
+
+	.not-front footer {
+		color: #641217;
+		height: 150px;
+		background-color: #f8f3f3;
+		padding-top: 25px;
+	}
+
+	.footer__contactinfo {
+		float: left;
+	}
+
+	.front .footer__contactinfo p {
+		text-transform: uppercase;
+	}
+
+	.not-front .footer__contactinfo p {
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+
+	footer {
+		clear: both;
+	}
+
+	.footer__right-side {
+		float: right;
+		text-align: right;
+	}
+
+	.not-front footer p, .not-front .footer__text-menu, .not-front .footer__text-menu a {
+		color: #641217
+	}
+
+	.front footer p, .front .footer__text-menu, .front .footer__text-menu a {
+		color: #b7b9ca
+	}
