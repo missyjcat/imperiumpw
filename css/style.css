@@ -28,6 +28,10 @@
 		display: block !important;
 	}
 
+	body.front {
+	    background-color: #303244;
+	}
+
 /*
  * HEADER REGION
  */
